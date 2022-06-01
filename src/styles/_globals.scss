@@ -25,3 +25,11 @@ body {
 *:after {
 	box-sizing: inherit;
 }
+
+@mixin font-primary {
+	color: $color-primary;
+	font-family: $font;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+}

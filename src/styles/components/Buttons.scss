@@ -2,14 +2,12 @@
 
 .button-filter {
 	background-color: $color-button;
-	border-color: $color-secundary;
-	color: $color-primary;
-	font-family: $font;
-	font-weight: 600;
+	border: 2px solid $color-secundary;
 	font-size: 17px;
 	padding: 20px 56px;
 	width: 100%;
 	min-width: 140px;
+	@include font-primary;
 	&:hover {
 		background-color: $color-button-hover;
 	}
