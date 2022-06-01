@@ -19,3 +19,9 @@ body {
 	background-position: center center;
 	height: 100vh;
 }
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}

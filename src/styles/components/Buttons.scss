@@ -1,0 +1,12 @@
+@use '../globals.scss' as *;
+
+.button-filter {
+	background-color: $color-button;
+	border-color: $color-secundary;
+	color: $color-primary;
+	font-family: $font;
+	font-weight: 600;
+	font-size: 17px;
+	width: 100%;
+	padding: 20px 56px;
+}
