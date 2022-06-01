@@ -5,8 +5,10 @@ import '../styles/containers/App.scss'
 function App() {
 	return (
 		<div className='Home'>
-			<Button title='Estudiantes' />
-			<Button title='Staff' />
+			<div className='Home-filters'>
+				<Button title='Estudiantes' />
+				<Button title='Staff' />
+			</div>
 		</div>
 	)
 }

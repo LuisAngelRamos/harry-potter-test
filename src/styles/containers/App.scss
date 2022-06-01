@@ -1,1 +1,17 @@
 @use '../globals.scss' as *;
+
+.Home {
+	margin: 0 5%;
+}
+
+.Home-filters {
+	margin: 0 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10%;
+	align-items: center;
+	@media (max-width: 360px) {
+		flex-direction: column;
+	}
+}
