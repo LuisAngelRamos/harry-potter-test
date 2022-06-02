@@ -3,7 +3,7 @@
 .card {
 	width: 100%;
 	margin: 0 2%;
-	@include display-flex;
+	@include display-flex-row;
 	align-items: inherit;
 	@media (max-width: 768px) {
 		flex-direction: column;
@@ -57,7 +57,7 @@
 			padding: 5%;
 		}
 		.info-status {
-			@include display-flex;
+			@include display-flex-row;
 			justify-content: space-between;
 			font-size: $size-label;
 			font-family: $font;

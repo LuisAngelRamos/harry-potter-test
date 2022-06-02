@@ -1,13 +1,21 @@
 @use '../globals.scss' as *;
+
 .bar {
 	width: 280px;
-	@include display-flex;
+	display: flex;
+	flex-direction: column;
+}
+.bar-buttons {
+	@include display-flex-row;
+	@media (max-width: 480px) {
+		order: 2;
+	}
 }
 .bar-button {
-	min-height: 36px;
+	height: 36px;
 	width: 100%;
 	background-color: $color-secundary;
-	border-color: transparent;
+	border: 1px solid $color-line;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	font-size: 14px;
 	@include font-primary;
@@ -29,5 +37,54 @@
 			border-bottom-right-radius: inherit;
 			border-top-right-radius: 10px;
 		}
+	}
+}
+.bar-button__favorites {
+	border-bottom-right-radius: inherit !important;
+	border-bottom-left-radius: inherit !important;
+	@media (max-width: 480px) {
+		border-top-right-radius: inherit !important;
+		border-top-left-radius: inherit !important;
+	}
+}
+.bar-favorites {
+	width: 278px;
+	background-color: $color-secundary;
+	border: 1px solid $color-line;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 14px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	@include display-flex-column;
+	@include font-primary;
+	text-transform: inherit;
+	.bar-favorite {
+		margin: 0 15px;
+		padding: 5px 0;
+		border-bottom: 1px solid $color-line;
+		@include display-flex-row;
+		justify-content: space-between;
+		&:last-of-type {
+			border-bottom: none;
+		}
+		.bar-favorite-info {
+			font-size: 18px;
+			font-family: $font;
+			font-weight: 600;
+			@include display-flex-row;
+			img {
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		order: 1;
+		border-bottom-left-radius: inherit;
+		border-bottom-right-radius: inherit;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
 	}
 }

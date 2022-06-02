@@ -6,7 +6,7 @@
 
 .home-filters {
 	margin: 0 5%;
-	@include display-flex;
+	@include display-flex-row;
 	justify-content: center;
 	gap: 10%;
 	@media (max-width: 360px) {
