@@ -1,0 +1,71 @@
+@use '../globals.scss' as *;
+
+.modal {
+	background-color: $color-primary;
+	border-radius: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 50%;
+	height: 50%;
+	font-family: $font;
+	font-weight: 600;
+	padding: 20px;
+	color: $color-modal-letter;
+	.modal-header {
+		@include display-flex-row;
+		justify-content: space-between;
+		font-size: 20px;
+		color: $color-title;
+	}
+	.modal-close {
+		cursor: pointer;
+	}
+	.modal-inputs-group {
+		@include display-flex-column;
+		.modal-inputs {
+			@include display-flex-row;
+			justify-content: space-around;
+		}
+	}
+	.modal-radios-group {
+		@include display-flex-row;
+		.modal-radios {
+			margin: 0 auto;
+			width: 100%;
+			@include display-flex-row;
+			justify-content: space-evenly;
+		}
+	}
+	.modal-label {
+		color: $color-modal-letter;
+		font-size: 14px;
+		font-family: $font;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+}
+
+.modal-input {
+	margin-top: 15px;
+	@include display-flex-column;
+	align-items: center;
+	width: 100%;
+	input {
+		width: 90%;
+		height: 50px;
+		background-color: $color-modal-input;
+		border: none;
+		border-radius: 5px 5px 0 0;
+		border-bottom: 1px solid $color-modal-letter;
+	}
+	label {
+		text-align: left !important;
+	}
+}
+
+.modal-radio {
+	margin-top: 15px;
+	@include display-flex-row;
+}
