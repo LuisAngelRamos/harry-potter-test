@@ -11,6 +11,8 @@ $color-label: #374a59;
 $color-ettiquete: #999999;
 $color-button: rgba(0, 0, 0, 0.6);
 $color-button-hover: rgba(107, 99, 181, 0.6);
+$color-line: #403b6d;
+$size-label: 14px;
 
 body {
 	background-image: url('/public/src/img/background.jpg');
@@ -32,4 +34,15 @@ body {
 	font-weight: 600;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+
+@mixin display-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
 }

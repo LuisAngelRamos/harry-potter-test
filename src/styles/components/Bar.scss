@@ -1,7 +1,7 @@
 @use '../globals.scss' as *;
 .bar {
 	width: 280px;
-	display: flex;
+	@include display-flex;
 }
 .bar-button {
 	min-height: 36px;

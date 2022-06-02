@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/components/Bar.scss'
-// <i class="fa-regular fa-bookmark"></i>
+// <i class="fa-regular fa-bookmark fa-lg"></i>
 const Bar = () => {
 	return (
 		<div className='bar'>
