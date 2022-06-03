@@ -5,7 +5,6 @@ import Card from './Card'
 
 const Cards = () => {
 	const characters = useSelector(state => state.characters.characters)
-	console.log(characters)
 
 	return (
 		<>

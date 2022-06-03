@@ -1,8 +1,11 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import { useSaveFavorite } from '../../hooks/useSaveFavorite'
 import '../../styles/components/Card.scss'
 
 const Card = ({ character }) => {
+	const stateFavorite = useSaveFavorite(character)
+
 	return (
 		<div className='card'>
 			<div
@@ -25,7 +28,27 @@ const Card = ({ character }) => {
 							? 'STAFF'
 							: 'PERSONAJE'}
 					</label>
-					<i className='fa-regular fa-bookmark fa-lg'></i>
+					{stateFavorite.state ? (
+						<i
+							className='fa-solid fa-bookmark fa-lg'
+							onClick={() =>
+								stateFavorite.onClick(
+									character,
+									!stateFavorite.state
+								)
+							}
+						></i>
+					) : (
+						<i
+							className='fa-regular fa-bookmark fa-lg'
+							onClick={() =>
+								stateFavorite.onClick(
+									character,
+									!stateFavorite.state
+								)
+							}
+						></i>
+					)}
 				</div>
 				<div className='info-name'>
 					<span>{character.name || '?'}</span>
