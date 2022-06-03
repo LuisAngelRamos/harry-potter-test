@@ -96,7 +96,7 @@ export const charactersSlice = createSlice({
 		[post.rejected]: (state, action) => {
 			state.isLoading = false
 			state.isAuthenticated = false
-			state.characters = characters
+			state.characters.push(action.payload)
 			state.error = action.payload.message
 		},
 	},

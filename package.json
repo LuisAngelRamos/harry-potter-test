@@ -6,8 +6,8 @@
 	"scripts": {
 		"build": "webpack",
 		"dev": "webpack-dev-server --history-api-fallback",
-		"test": "jest",
-		"test:watch": "jest --watch"
+		"dev:server": "json-server db.json",
+		"test": "jest"
 	},
 	"repository": {
 		"type": "git",
@@ -46,6 +46,7 @@
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.8.2",
+		"jest": "^28.1.0",
 		"prop-types": "^15.8.1",
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0",
