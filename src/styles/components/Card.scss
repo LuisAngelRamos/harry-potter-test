@@ -1,8 +1,9 @@
 @use '../globals.scss' as *;
 
 .card {
+	flex: 0 0 calc(50% - 20px);
 	width: 100%;
-	margin: 0 2%;
+	margin-bottom: 40px;
 	@include display-flex-row;
 	align-items: inherit;
 	@media (max-width: 768px) {
@@ -12,7 +13,6 @@
 		border-top-left-radius: 25px;
 		border-bottom-left-radius: 25px;
 		flex-basis: 40%;
-		background: $color-gryffindor;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -22,6 +22,13 @@
 			width: 75%;
 			border-radius: 50%;
 		}
+		@media (max-width: 1024px) {
+			img {
+				height: 115px;
+				width: 115px;
+				padding: 25px 0;
+			}
+		}
 		@media (max-width: 768px) {
 			max-height: 150px;
 			border-bottom-left-radius: inherit;
@@ -29,7 +36,6 @@
 			img {
 				height: 100px;
 				width: 100px;
-				padding: 25px 0;
 			}
 		}
 		@media (max-width: 480px) {
@@ -45,7 +51,7 @@
 		background-color: $color-primary;
 		border-top-right-radius: 25px;
 		border-bottom-right-radius: 25px;
-		padding: 3%;
+		padding: 5%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -54,7 +60,7 @@
 			border-bottom-left-radius: 25px;
 		}
 		@media (max-width: 480px) {
-			padding: 5%;
+			padding: 8%;
 		}
 		.info-status {
 			@include display-flex-row;
@@ -87,8 +93,10 @@
 			font-family: $font;
 			color: $color-label;
 			font-size: $size-label;
+			text-transform: capitalize;
 			span {
 				font-weight: 600;
+				text-transform: none;
 			}
 			label {
 				font-weight: 400;
@@ -98,4 +106,23 @@
 			}
 		}
 	}
+}
+
+.house-Slytherin {
+	background: $color-slytherin;
+}
+.house-Gryffindor {
+	background: $color-gryffindor;
+}
+.house-Ravenclaw {
+	background: $color-ravenclaw;
+}
+.house-Hufflepuff {
+	background: $color-hufflepuff;
+}
+.house-default {
+	background: $color-default;
+}
+.not-alive {
+	background-color: $color-variation !important;
 }

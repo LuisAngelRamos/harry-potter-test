@@ -6,6 +6,7 @@ $color-slytherin: linear-gradient(135deg, #1c792b 0%, #82e95e 100%);
 $color-hufflepuff: linear-gradient(135deg, #ffc700 0%, #fff388 100%);
 $color-ravenclaw: linear-gradient(135deg, #0597b7 0%, #66d1ff 100%);
 $color-gryffindor: linear-gradient(135deg, #ff0000 0%, #fed482 100%);
+$color-default: linear-gradient(135deg, #000000 0%, #c5c5c5 100%);
 $color-title: #081f32;
 $color-label: #374a59;
 $color-ettiquete: #999999;
@@ -17,6 +18,7 @@ $color-modal-input: #f2f3f3;
 $size-label: 14px;
 
 body {
+	background-color: #000;
 	background-image: url('/public/src/img/background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -49,6 +51,7 @@ body {
 	flex-direction: column;
 }
 
+h1,
 h2 {
 	padding: 0;
 	margin: 0;
