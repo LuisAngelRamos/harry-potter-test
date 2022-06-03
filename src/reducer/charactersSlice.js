@@ -7,7 +7,6 @@ export const post = createAsyncThunk(
 	'/characters',
 	async (dataPost, { rejectWithValue }) => {
 		try {
-			console.log(dataPost)
 			const character = dataPost
 			if (character.position === 'student') {
 				character.hogwartsStudent = true
@@ -37,7 +36,7 @@ export const post = createAsyncThunk(
 
 			return character
 		} catch (err) {
-			return rejectWithValue(err)
+			return rejectWithValue(dataPost)
 		}
 	}
 )
@@ -94,6 +93,7 @@ export const charactersSlice = createSlice({
 			state.characters.push(action.payload)
 		},
 		[post.rejected]: (state, action) => {
+			console.log(action.payload)
 			state.isLoading = false
 			state.isAuthenticated = false
 			state.characters.push(action.payload)

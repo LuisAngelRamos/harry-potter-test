@@ -2,7 +2,8 @@
 
 ## Sobre la app
 
-La app fue creada con webpack por decisión personal y para practicar con está herramienta, el servidor json-server solo está disponible en entorno local, la app en productivo no cuenta con el soporte a este servidor
+La app fue creada con webpack por decisión personal y para practicar con está herramienta, el servidor json-server solo está disponible en entorno local, la app en productivo no cuenta con el soporte a este servidor,
+sin embargo podras visualizar los personajes añadidos al final del listado de los personajes
 
 ## Pasos para levantar el servidor
 
