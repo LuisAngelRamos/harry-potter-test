@@ -8,11 +8,14 @@
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	width: 50%;
-	height: 50%;
+	height: 70%;
 	font-family: $font;
 	font-weight: 600;
 	padding: 20px;
 	color: $color-modal-letter;
+	@media (max-width: 768px) {
+		overflow: scroll;
+	}
 	.modal-header {
 		@include display-flex-row;
 		justify-content: space-between;
@@ -27,14 +30,21 @@
 		.modal-inputs {
 			@include display-flex-row;
 			justify-content: space-around;
+			@media (max-width: 768px) {
+				@include display-flex-column;
+			}
 		}
 	}
 	.modal-radios-group {
 		@include display-flex-row;
+		text-align: center;
+		@media (max-width: 768px) {
+			@include display-flex-column;
+		}
 		.modal-radios {
-			margin: 0 auto;
+			margin: 10px auto;
 			width: 100%;
-			@include display-flex-row;
+			@include display-flex-column;
 			justify-content: space-evenly;
 		}
 	}
@@ -44,6 +54,12 @@
 		font-family: $font;
 		font-weight: 400;
 		text-transform: uppercase;
+	}
+	.modal-file {
+		@include display-flex-column;
+		justify-content: center;
+		align-items: center;
+		margin: 10px 0;
 	}
 }
 
@@ -65,7 +81,25 @@
 	}
 }
 
+.modal-radio-row {
+	@include display-flex-row;
+	justify-content: center;
+}
+
 .modal-radio {
 	margin-top: 15px;
 	@include display-flex-row;
+}
+
+.modal-submit {
+	width: 50%;
+	display: flex;
+	margin: 10px auto;
+	justify-content: center;
+}
+
+.modal-img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 }

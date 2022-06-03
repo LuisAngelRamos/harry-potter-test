@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Buttons from '../components/Buttons/Buttons'
 import Bar from '../components/Bar/Bar'
 import Cards from '../components/Cards/Cards'
-import Modal from '../components/Modal'
+import Modal from '../components/Modal/Modal'
 import Logo from '../logo/Logo'
 
 import '../styles/containers/App.scss'
@@ -28,7 +28,9 @@ function App() {
 			<div className='home-cards'>
 				<Cards />
 			</div>
-			{showModal && <Modal />}
+			{showModal && (
+				<Modal showModal={showModal} setShowModal={setShowModal} />
+			)}
 		</div>
 	)
 }

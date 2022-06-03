@@ -10,6 +10,7 @@ export const favoriteSlice = createSlice({
 			if (state.favorites?.length < 5) {
 				state.favorites.push(action.payload)
 			} else {
+				alert('Favoritos Lleno')
 				throw new Error('Favoritos Lleno')
 			}
 		},

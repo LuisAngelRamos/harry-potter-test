@@ -7,4 +7,8 @@ export default configureStore({
 		characters: charactersReducer,
 		favorites: favoritesReducer,
 	},
+	middleware: getDefaultMiddleware =>
+		getDefaultMiddleware({
+			serializableCheck: false,
+		}),
 })

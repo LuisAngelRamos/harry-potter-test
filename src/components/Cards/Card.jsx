@@ -41,6 +41,7 @@ const Card = ({ character }) => {
 					) : (
 						<i
 							className='fa-regular fa-bookmark fa-lg'
+							data-testid='save-favorite'
 							onClick={() =>
 								stateFavorite.onClick(
 									character,
