@@ -10,8 +10,8 @@ sin embargo podras visualizar los personajes añadidos al final del listado de l
 1. Descargar el repositorio
 2. Posicionarse dentro de la carpeta descargada en la terminal
 3. Ejecutar **npm install** para instalar todas las dependencias necesarias para ejecutar el entorno local
-4. Para levantar la aplicación se necesita ejecutar el comando **npm run dev**
-5. Para levantar el servidor json-server se necesita ejecutar el comando **npm run dev:server**
+4. Para levantar la aplicación se necesita ejecutar el comando **npm run dev** ejecutara la app en el puerto 3005
+5. Para levantar el servidor json-server se necesita ejecutar el comando **npm run dev:server** ejecutara el servidor en el puerto 3000
 6. Para ejecutar pruebas unitarias se necesita ejecutar el comando **npm run test**
 
 ## ¿Qué es lo que más te gustó de tu desarrollo?
