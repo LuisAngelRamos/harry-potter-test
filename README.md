@@ -25,6 +25,7 @@ Disfrute cada parte del proyecto, desde estructurar la app, definir las dependen
 3. Agregaría un modal disponible para cuando se diera clic a una tarjeta o favorito y contendría toda la información del personaje
 4. Agregar useMemo para evitar renders innecesarios
 5. Cambiar el modal de agregar personaje me falto mucho estilado y varios campos importantes por agregar, así como cambiar el input file
+6. Haría mas pruebas unitarias
 
 ## Descríbenos un pain point o bug con el que te hayas encontrado y como lo solucionaste
 
