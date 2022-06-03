@@ -1,6 +1,6 @@
 import React from 'react'
 import propTypes from 'prop-types'
-import '../styles/components/Card.scss'
+import '../../styles/components/Card.scss'
 
 const Card = ({ character }) => {
 	return (

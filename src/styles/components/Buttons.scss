@@ -25,3 +25,10 @@
 		margin-bottom: 10px;
 	}
 }
+
+.button-filter__active {
+	background-color: $color-secundary;
+	&:hover {
+		background-color: $color-secundary;
+	}
+}

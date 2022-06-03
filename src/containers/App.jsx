@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-import Button from '../components/Button'
+import Buttons from '../components/Buttons/Buttons'
 import Bar from '../components/Bar'
-import Cards from '../components/Cards'
+import Cards from '../components/Cards/Cards'
 import Modal from '../components/Modal'
 import Logo from '../logo/Logo'
 
@@ -23,8 +23,7 @@ function App() {
 				<Bar showModal={showModal} setShowModal={setShowModal} />
 			</div>
 			<div className='home-filters'>
-				<Button title='Estudiantes' />
-				<Button title='Staff' />
+				<Buttons />
 			</div>
 			<div className='home-cards'>
 				<Cards />
